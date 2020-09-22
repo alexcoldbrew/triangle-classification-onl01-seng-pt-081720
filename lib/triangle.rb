@@ -10,6 +10,8 @@ class Triangle
   
   def kind
     
+    # had to add the extra if/elsif/else at beginning for the invalid checking to raise the errors , then , if it is valid, it checks what kind it is
+    
     if side_1 <= 0 || side_2 <= 0 || side_3 <= 0
       raise TriangleError
       
